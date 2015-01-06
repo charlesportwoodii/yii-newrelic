@@ -157,7 +157,7 @@ class YiiNewRelic extends CApplicationComponent
 		$route = $controllerId . '/' . $actionId;
 		$module = Yii::app()->controller->module;
 		if ($module instanceof CModule)
-			$route = $module->getId() . '/' . $route;
+			$route = '['. $module->getId() . '] ' . $route;
 
 		$this->nameTransaction($route);
 	}

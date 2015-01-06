@@ -1,0 +1,9 @@
+{
+	"name": "gtcode/yii-newrelic",
+	"description": "Yii wrapper around the New Relic PHP API",
+	"license": "Modified BSD",
+	"keywords": [
+		"yii",
+		"new relic"
+	]
+}
