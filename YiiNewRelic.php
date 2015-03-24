@@ -143,7 +143,10 @@ class YiiNewRelic extends CApplicationComponent
 		if ($this->skip()) {
 			return;
 		}
-		$this->setAppName(Yii::app()->name);
+
+		if ($this->setAppNameToYiiName == true) {
+			$this->setAppName(Yii::app()->name);
+		}
 	}
 
 	/**
